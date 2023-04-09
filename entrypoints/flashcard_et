@@ -1,0 +1,24 @@
+from fastapi import APIRouter
+from fastapi import HTTPException
+from pydantic import BaseModel
+from ..services import FlashcardService
+
+router = APIRouter()
+flashcard_service = FlashcardService()
+
+class FlashcardInput(BaseModel):
+    word: str
+    selection: str
+
+class FlashcardOutput(BaseModel):
+    word: str
+    usage_examples: list
+    hanzi: list
+    radicals: list
+    idioms: list
+
+@router.post("/flashcards/")
+async def create_flashcard(flashcard_input: FlashcardInput) -> FlashcardOutput:
+    flashcard_data = flashcard_input.dict()
+    flashcard = await flashcard_service.create_flashcard(flashcard_data)
+    return FlashcardOutput(**flashcard)
