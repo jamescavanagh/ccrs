@@ -33,3 +33,27 @@ Relating words to personal experience is why language immersion is so effective.
 ## 6. Relationship to deep Chinese Culture (Idioms and allusions)
 
    At a final level, Chinese characters have a relationship to the culture itself. While Chinese and English share a suprising amount of idioms, such as how in English you say "Kill two birds with one stone," in Chinese it is "Shoot two birds with one arrow." There are many allusions to Chinese culture, which can become very interesting and engender curiousity. This is the final level of relationships that I use to learn. 
+
+<hr/>
+
+# Application's Vision 
+
+Enhances the learners ability to create relational flashcards through running through the previous 6 methods. Rather than rely on spaced repetition, this method takes multiple passes to eventually find an association that latches onto the knowledge that a person has. 
+
+Step 1: Inputting a word or phrase, the program will then go to step 1 to query the database other words that share common characters. It then uses a strategy module to rank the other words by if the user already knows them, word frequency, and other factors. The user then can query these other words, and get the information to explore them. And if something sticks or is interesting, the user selects the word(s) to be included in the flashcard.
+
+Step 2: The program will show other words that share character components, first through meaning and then through shared pronunciation. This helps look for ways to map on the understandin.
+
+Step 3: The program shows the structure of the character, and how to look at it. 
+
+Step 4: The program shows the radicals, and asks questions about why they might have these radicals or if the user fails to remember them, then asks the user to create a memonic or story to remember the character
+
+Step 5: Use embedding search to give a list of words that have the highest cosign similarity
+
+Step 6: The program shares idioms that contain the word, along with an explaination of them. 
+
+<hr/>
+
+# Application Design
+
+
